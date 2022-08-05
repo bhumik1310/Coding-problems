@@ -1,0 +1,17 @@
+//stold converts string to a long double 
+//static_cast casts the double as an int thus bypassing the need of long long
+long double num = stold(A);
+
+    if(num == 1 || num == 0){
+        return 0;
+    }    
+
+    while(static_cast<int>(num) % 2 == 0 && num > 1){
+        num /= 2;
+    }
+
+    if(num == 1){
+        return 1;
+    }
+
+    return 0;

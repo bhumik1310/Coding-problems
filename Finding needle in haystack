@@ -1,0 +1,5 @@
+// Intentionally vague question , asking futher questions was necessary
+// find function in strings gives the index of the substring in a given string 
+ if(needle.length()==0)return -1;
+ else if (haystack.length()==0) return -1;
+ else return haystack.find(needle);
